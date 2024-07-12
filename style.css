@@ -6,7 +6,7 @@
 }
 
 a {
-    color: inherit 
+    color: inherit
 }
 
 ul {
@@ -22,12 +22,12 @@ body {
     margin: 50px;
 }
 
-.nav-logo{
+.nav-logo {
     color: #c1c1c1;
     font-size: 64px;
 }
 
-.off-home-nav-logo{
+.off-home-nav-logo {
     color: #c1c1c1;
     font-size: 64px;
     margin: 50px;
@@ -47,16 +47,16 @@ body {
 }
 
 .selector {
-    color:#00B612;
+    color: #00B612;
     font-size: 24px;
-    margin-top: 20px;   
+    margin-top: 20px;
     margin-left: 25px;
 }
 
 .focused {
     background-color: #00B612;
     color: #282828;
-    
+
 }
 
 a:focus {
@@ -79,16 +79,16 @@ a:focus {
 }
 
 .post-image {
-    width: 50%; 
-    height: 500px; 
+    width: 50%;
+    height: 500px;
     object-fit: cover;
-    object-position: 25% 25%; 
+    object-position: 25% 25%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     display: block;
     outline: #000000 solid 3px;
-    }
+}
 
 .post-content {
     color: #c1c1c1;
@@ -99,3 +99,30 @@ a:focus {
     width: 50%;
 }
 
+.bottom-text {
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.rainbow-text-animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
