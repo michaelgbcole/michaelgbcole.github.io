@@ -45,9 +45,19 @@ ul {
     margin-top: 50px;
 }
 
-.post-selector {
+.selector {
     color:#00B612;
     font-size: 24px;
     margin-top: 20px;   
     margin-left: 25px;
+}
+
+.focused {
+    background-color: #00B612;
+    color: #282828;
+    
+}
+
+a:focus {
+    outline: none;
 }
