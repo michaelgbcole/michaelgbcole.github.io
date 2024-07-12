@@ -19,13 +19,13 @@ body {
 }
 
 .nav {
-    margin: 50px;
+    margin: 2.5%;
     position: relative;
 }
 
 .nav-logo {
     color: #c1c1c1;
-    font-size: 64px;
+    font-size: 5em;
 }
 
 .off-home-nav-logo {
@@ -36,7 +36,7 @@ body {
 
 .nav-links {
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 2em;
     color: #00B612;
 }
 
