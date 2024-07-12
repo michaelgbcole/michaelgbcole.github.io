@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+}
+
+.body {
+    font-family: 'Inconsolata' , monospace;
+}
+
+.nav {
+    margin: 50px;
+}
+
+.nav-logo{
+    color: #c1c1c1;
+    font-size: 64px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #00B612
+}
