@@ -136,4 +136,10 @@ a:focus {
     .content-desktop {
         display: none;
     }
+    .nav-logo {
+        font-size: 2rem;
+    }
+    .nav-links {
+        font-size: 1rem;
+    }
 }
