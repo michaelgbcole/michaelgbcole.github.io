@@ -13,8 +13,9 @@ ul {
     list-style-type: none;
 }
 
-.body {
-    font-family: 'Inconsolata' , monospace;
+body {
+    background-color: #282828;
+    font-family: 'Inconsolata', monospace;
 }
 
 .nav {
@@ -61,3 +62,40 @@ ul {
 a:focus {
     outline: none;
 }
+
+.post-title {
+    color: #00B612;
+    font-size: 48px;
+    text-align: center;
+}
+
+.post-meta {
+    color: #c1c1c1;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.post-image {
+    width: 50%; 
+    height: 500px; 
+    object-fit: cover;
+    object-position: 25% 25%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    outline: #000000 solid 3px;
+    }
+
+.post-content {
+    color: #c1c1c1;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+

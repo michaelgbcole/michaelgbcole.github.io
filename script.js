@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.off-home-nav-logo a, .selector a, .nav a');
+    const links = document.querySelectorAll('.off-home-nav-logo a, .selector a, .nav a, .contacts a');
     let currentIndex = 0;
 
     links[currentIndex].classList.add('focused');
