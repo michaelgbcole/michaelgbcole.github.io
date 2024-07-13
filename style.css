@@ -20,20 +20,13 @@ body {
 
 .nav {
     margin: 2.5%;
-    margin-bottom: 100%;
-    margin-right: 100%s
-    position: relative;
+    margin-right: 100%;
+    position: absolute;
 }
 
 .nav-logo {
     color: #c1c1c1;
     font-size: 5rem;
-}
-
-.off-home-nav-logo {
-    color: #c1c1c1;
-    font-size: 64px;
-    margin: 50px;
 }
 
 .nav-links {
@@ -49,12 +42,6 @@ body {
     margin-top: 50px;
 }
 
-.selector {
-    color: #00B612;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-left: 25px;
-}
 
 .focused {
     background-color: #00B612;
@@ -66,6 +53,7 @@ a:focus {
     outline: none;
 }
 
+/* post stuff **/
 .post-title {
     color: #00B612;
     font-size: 48px;
