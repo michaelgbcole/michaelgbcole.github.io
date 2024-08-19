@@ -24,6 +24,12 @@ body {
     position: absolute;
 }
 
+.microblog {
+    color: #00B612;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
 .nav-logo {
     color: #c1c1c1;
     font-size: 5rem;
