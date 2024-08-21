@@ -24,6 +24,10 @@ body {
     position: absolute;
 }
 
+.in-text-link {
+    text-decoration: underline;
+}
+
 .microblog {
     color: #00B612;
     font-size: 2rem;
@@ -59,8 +63,16 @@ a:focus {
     margin-right: 15%;
 }
 
+.post-subheading {
+    color: #c1c1c1;
+    font-size: 2rem;
+    margin-top: 2.5%;
+    text-align: center;
+}
+
 .post-title {
     color: #00B612;
+    margin-top: 2.5%;
     font-size: 5rem;
     text-align: center;
 }
@@ -71,21 +83,34 @@ a:focus {
     margin-top: 2.5%;
 }
 
-.post-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin-top: 2.5%;
-    display: block;
-    outline: #000000 solid 3px;
+.post-title-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-top: 2.5%;
+        display: flex;
+        outline: #000000 solid 3px;
+    
+    }
 
-}
+
 
 .post-content {
     color: #c1c1c1;
     font-size: 1.25rem;
     margin-top: 2.5%;
 
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: 500px;
+    margin-top: 1%;
+    outline: #000000 solid 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bottom-text {

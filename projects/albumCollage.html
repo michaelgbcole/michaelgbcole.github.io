@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" title="albumCollage" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../media/album-genqueries.css" />
+</head>
+
+<body>
+  <div class="nav-logo">
+    <a href="../index.html">michaelcole.me</a>
+  </div>
+  <div class="post">
+    <div class="post-title">
+      <p>Building albumCollage</p>
+    </div>
+    <img class="post-title-image" src="../media/album-gen/albumCollage.png" />
+    <div class="post-meta">
+      <p>8/20/2024 11:03pm</p>
+      <p>Michael Cole</p>
+    </div>
+    <div class="post-content">
+      <p>
+        A couple of weeks ago, I attended the SAM 2 Hackathon at AGI House SF. SAM 2 is Meta's latest image/video segmentation mode. My partner at the event,
+        Chris Voon, and I had no idea what we were really doing. Meeting 30+ tech bros within the span of an hour was overstimulating. We sat, thinking about 
+        different ideas for our project. Eventually, we settled on a general direction: we wanted to create something that delt with generating album covers. 
+        Initally, we wanted to train, or at least fine tune a model to generate album covers from scratch. So, we pulled from an API that listed album's, their 
+        covers, their artists, and their genres. Once we had this dataset, we began to work on implementing them into our SAM 2 API, graciously provided by <a class="in-text-link" href="replicate.com">replicate.com</a>.
+        At this point we had around 2 hours left in the hackathon, so we decided to pivot. Rather than generating from scratch, we decided to grab random bits and pieces
+        of album covers of a given genre, and paste them on top of eachother. This was a fun, artsy project that we presented, and although we didn't win, we learned the 
+        importance of deciding what NOT to build. Here is the github repo for the <a class="in-text-link" href="https://github.com/woofer300/collage-album-cover-generator">project</a>. Below are the results for each genre.
+      </p>
+      <p class="post-subheading">90s</p>
+      <img class="post-image" src="../media/album-gen/90s.jpg" />
+      <p class="post-subheading">hip-hop</p>
+      <img class="post-image" src="../media/album-gen/hip-hop.jpg" />
+        <p class="post-subheading">jazz</p>
+        <img class="post-image" src="../media/album-gen/jazz.jpg" />
+        <p class="post-subheading">rock</p>
+        <img class="post-image" src="../media/album-gen/rock.jpg" />
+        <p class="post-subheading">pop</p>
+        <img class="post-image" src="../media/album-gen/pop.jpg" />
+        <p class="post-subheading">80s</p>
+        <img class="post-image" src="../media/album-gen/80s.jpg" />
+    </div>
+  </div>
+</body>
+
+</html>
