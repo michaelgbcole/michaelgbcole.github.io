@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing — Michael Cole</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="page page-compact">
+    <header class="simple-header">
+      <a class="home-link focusable" href="index.html">Michael Cole</a>
+      <nav class="simple-nav">
+        <a class="nav-link focusable" href="projects.html">Projects</a>
+        <a class="nav-link focusable is-current" href="posts.html">Writing</a>
+        <a class="nav-link focusable" href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<body class="body">
-    <div class="nav">
-        <div class="nav-logo"> 
-            <a href="index.html">michaelcole.me</a>
-        </div>
-        <div id="post-selector" , class="nav-links">
-            <p><a href="posts/post2.html">>Post 2</a></p>
-            <p><a href="posts/post1.html">>Post 1</a></p>
-        </div>
-    </div>
-    <div>
-        <p class="bottom-text rainbow-text-animated content-desktop"></pclass>  On Desktop, you can use arrow keys to navigate!</p>
-    </div>
-    <script src="script.js"></script>
+    <main class="single-column">
+      <div>
+        <h1 class="page-title">All writing</h1>
+        <p class="page-lede">A running log of essays, notes, and build journals.</p>
+      </div>
+
+      <ul class="entry-list compact" aria-label="All writing">
+        <li class="entry">
+          <a class="entry-link focusable" href="posts/post1.html">
+            <span class="entry-title">What teachers actually need from AI</span>
+            <span class="entry-meta">July 11, 2024 · notes from building Gist</span>
+            <span class="entry-note">Why synthetic insight beats dashboards and how product craft can make classrooms saner.</span>
+          </a>
+        </li>
+        <li class="entry">
+          <a class="entry-link focusable" href="posts/post2.html">
+            <span class="entry-title">Album covers, remixed</span>
+            <span class="entry-meta">Aug 20, 2024 · hackathon reflections</span>
+            <span class="entry-note">Painting with segmentation models and learning what not to automate.</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

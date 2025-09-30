@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Michael Cole</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="page page-compact">
+    <header class="simple-header">
+      <a class="home-link focusable" href="index.html">Michael Cole</a>
+      <nav class="simple-nav">
+        <a class="nav-link focusable is-current" href="projects.html">Projects</a>
+        <a class="nav-link focusable" href="posts.html">Writing</a>
+        <a class="nav-link focusable" href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<body class="body">
-    <div class="nav">
-    <div class="nav-logo">  
-        <a href="index.html">michaelcole.me</a>
-    </div>
-    <div class="nav-links">
-        <p><a href="projects/Gist.html">>Gist</a></p> 
-        <p><a href="projects/albumCollage.html">>albumCollage</a></p>
-        <p><a href="https://github.com/michaelgbcole/ic-social" target= "_blank">>IC-Social</a></p>
-        <p><a href="https://github.com/michaelgbcole/gist-frontend" target="_blank">>Gist (gh repo)</a></p>
-        <p><a href="projects/sober-up.html">>SoberUp</a></p>
-    </div>
-</div>
-<div>
-    <p class="bottom-text rainbow-text-animated content-desktop"></pclass>  On Desktop, you can use arrow keys to navigate!</p>
-</div>
-    <script src="script.js"></script>
+    <main class="single-column">
+      <div>
+        <h1 class="page-title">All projects</h1>
+        <p class="page-lede">Selected product builds and experiments worth shipping or studying.</p>
+      </div>
+
+      <ul class="entry-list compact" aria-label="All projects">
+        <li class="entry">
+          <a class="entry-link focusable" href="projects/Gist.html">
+            <span class="entry-title">Gist</span>
+            <span class="entry-meta">2025 · teacher analytics studio</span>
+            <span class="entry-note">Synthesizing student assignments with LLMs so educators can see progress without drowning in spreadsheets.</span>
+          </a>
+        </li>
+        <li class="entry">
+          <a class="entry-link focusable" href="projects/sober-up.html">
+            <span class="entry-title">SoberUp</span>
+            <span class="entry-meta">2025 · wellness companion</span>
+            <span class="entry-note">A lightweight accountability app for people building healthier rituals, designed to feel calm rather than clinical.</span>
+          </a>
+        </li>
+        <li class="entry">
+          <a class="entry-link focusable" href="projects/albumCollage.html">
+            <span class="entry-title">albumCollage</span>
+            <span class="entry-meta">2024 · generative art experiment</span>
+            <span class="entry-note">Splicing favorite album covers with SAM2 to create genre moodboards in seconds.</span>
+          </a>
+        </li>
+        <li class="entry">
+          <a class="entry-link focusable" href="https://github.com/michaelgbcole/ic-social" target="_blank" rel="noopener">
+            <span class="entry-title">IC Social</span>
+            <span class="entry-meta">2023 · social feed prototype</span>
+            <span class="entry-note">Open-source exploration of interest-based communities for high schoolers.</span>
+          </a>
+        </li>
+        <li class="entry">
+          <a class="entry-link focusable" href="https://github.com/michaelgbcole/gist-frontend" target="_blank" rel="noopener">
+            <span class="entry-title">Gist front-end</span>
+            <span class="entry-meta">2024 · production React app</span>
+            <span class="entry-note">The code powering the educator-facing interface, tuned for clarity and quick iteration.</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
