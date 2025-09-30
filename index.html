@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>michaelcole.me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Cole — thoughtful software</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="masthead">
+        <p class="eyebrow">Michael Cole / Designerly Engineer</p>
+        <h1>Soft tools for curious people.</h1>
+        <p class="intro">I prototype interfaces, ship production software, and sweat the typography so everything feels intentional. Below is a living index of what I'm making and writing.</p>
+      </div>
+      <div class="cta-stack">
+        <a class="cta focusable" href="resume.pdf">Résumé</a>
+        <a class="cta focusable" href="contact.html">Contact</a>
+      </div>
+    </header>
 
-<body class="landing">
-    <div id="wave-field"></div>
-    <nav id="desktop-nav" class="nav landing-nav">
-        <div class="nav-logo landing-logo">
-            <a href="index.html">michaelcole.me</a>
+    <main class="columns">
+      <section class="column">
+        <div class="column-title">Projects</div>
+        <ul class="entry-list" aria-label="Featured projects">
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/Gist.html">
+              <span class="entry-title">Gist</span>
+              <span class="entry-meta">2025 · teacher analytics studio</span>
+              <span class="entry-note">Synthesizing student assignments with LLMs so educators can see progress without drowning in spreadsheets.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/sober-up.html">
+              <span class="entry-title">SoberUp</span>
+              <span class="entry-meta">2025 · wellness companion</span>
+              <span class="entry-note">A lightweight accountability app for people building healthier rituals, designed to feel calm rather than clinical.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/albumCollage.html">
+              <span class="entry-title">albumCollage</span>
+              <span class="entry-meta">2024 · generative art experiment</span>
+              <span class="entry-note">Splicing favorite album covers with SAM2 to create genre moodboards in seconds.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="column">
+        <div class="column-title">Writing</div>
+        <ul class="entry-list" aria-label="Recent writing">
+          <li class="entry">
+            <a class="entry-link focusable" href="posts/post1.html">
+              <span class="entry-title">What teachers actually need from AI</span>
+              <span class="entry-meta">July 11, 2024 · notes from building Gist</span>
+              <span class="entry-note">On why synthetic insight beats dashboards and how product craft can make classrooms saner.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="posts/post2.html">
+              <span class="entry-title">Album covers, remixed</span>
+              <span class="entry-meta">Aug 20, 2024 · hackathon reflections</span>
+              <span class="entry-note">A quick debrief on painting with segmentation models and learning what not to automate.</span>
+            </a>
+          </li>
+        </ul>
+        <div class="more-links">
+          <a class="underline-link focusable" href="projects.html">All projects</a>
+          <a class="underline-link focusable" href="posts.html">All posts</a>
         </div>
-        <div>
-            <ul class="nav-links landing-links">
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="resume.pdf">resume</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="posts.html">posts</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main class="landing-main">
-        <section class="landing-hero">
-            <h1 class="hero-title">WELCOME TO THE FUTURE*</h1>
-            <p class="hero-subtitle">*AS IMAGINED IN 1997</p>
-            <p class="hero-body">I'm Michael, crafting software, sounds, and strange little experiments for the web. Click around, drag the future into the past, and enjoy the ripples.</p>
-            <div class="hero-buttons">
-                <a class="hero-button" href="projects.html">SEE THE LAB</a>
-                <a class="hero-button secondary" href="posts.html">READ THE LOGS</a>
-            </div>
-        </section>
-        <section class="landing-marquee" aria-hidden="true">
-            <div class="marquee-track">
-                <span>~*~ hypertext dreams ~*~ cyber vibes ~*~ technicolor nostalgia ~*~ midnight coding sessions ~*~</span>
-            </div>
-        </section>
+      </section>
     </main>
-    <footer class="landing-footer">
-        <p>Best experienced with arrow keys &amp; a healthy dose of curiosity.</p>
+
+    <footer class="site-footer">
+      <p>Hand-built in HTML and restraint. If you want something this considered for your team, let's talk.</p>
     </footer>
-    <script src="script.js"></script>
-    <script src="waves.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
