@@ -9,23 +9,41 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
-<body class="body">
-    <nav id="desktop-nav", class="nav">
-        <div class="nav-logo">  
+<body class="landing">
+    <div id="wave-field"></div>
+    <nav id="desktop-nav" class="nav landing-nav">
+        <div class="nav-logo landing-logo">
             <a href="index.html">michaelcole.me</a>
         </div>
         <div>
-            <ul class="nav-links">
-                <li><a href="contact.html">>contact</a></li>
-                <li><a href="resume.pdf">>resume</a></li>
-                <li><a href="projects.html">>projects</a></li>
-                <li><a href="posts.html">>posts</a></li>
+            <ul class="nav-links landing-links">
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="resume.pdf">resume</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="posts.html">posts</a></li>
             </ul>
         </div>
     </nav>
-    <div>
-        <p class="bottom-text rainbow-text-animated content-desktop"></pclass>  On Desktop, you can use arrow keys to navigate!</p>
-    </div>
+    <main class="landing-main">
+        <section class="landing-hero">
+            <h1 class="hero-title">WELCOME TO THE FUTURE*</h1>
+            <p class="hero-subtitle">*AS IMAGINED IN 1997</p>
+            <p class="hero-body">I'm Michael, crafting software, sounds, and strange little experiments for the web. Click around, drag the future into the past, and enjoy the ripples.</p>
+            <div class="hero-buttons">
+                <a class="hero-button" href="projects.html">SEE THE LAB</a>
+                <a class="hero-button secondary" href="posts.html">READ THE LOGS</a>
+            </div>
+        </section>
+        <section class="landing-marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>~*~ hypertext dreams ~*~ cyber vibes ~*~ technicolor nostalgia ~*~ midnight coding sessions ~*~</span>
+            </div>
+        </section>
+    </main>
+    <footer class="landing-footer">
+        <p>Best experienced with arrow keys &amp; a healthy dose of curiosity.</p>
+    </footer>
     <script src="script.js"></script>
+    <script src="waves.js"></script>
 </body>
 </html>
