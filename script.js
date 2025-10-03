@@ -1,22 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.nav-logo a, .selector a, .nav a, .contacts a');
-    let currentIndex = 0;
+  const root = document.documentElement;
+  const updatePointer = (event) => {
+    root.style.setProperty('--pointer-x', `${event.clientX}px`);
+    root.style.setProperty('--pointer-y', `${event.clientY}px`);
+  };
 
-    links[currentIndex].classList.add('focused');
-    links[currentIndex].focus();
+  window.addEventListener('pointermove', updatePointer);
 
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowDown') {
-            links[currentIndex].classList.remove('focused');
-            currentIndex = (currentIndex + 1) % links.length;
-            links[currentIndex].classList.add('focused');
-            links[currentIndex].focus();
-        } 
-        else if (event.key === 'ArrowUp') {
-            links[currentIndex].classList.remove('focused');
-            currentIndex = (currentIndex - 1 + links.length) % links.length;
-            links[currentIndex].classList.add('focused');
-            links[currentIndex].focus();
-        }
-    });
+  window.addEventListener('pointerdown', () => {
+    root.classList.add('is-pressing');
+  });
+
+  window.addEventListener('pointerup', () => {
+    root.classList.remove('is-pressing');
+  });
+
+  window.addEventListener('pointerleave', () => {
+    root.classList.remove('is-pressing');
+  });
 });

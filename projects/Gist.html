@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" title="albumCollage" />
-  <title>Contact</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../media/album-genqueries.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Gist — Michael Cole</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
+<body class="page-compact">
+  <div class="page post-page">
+    <header class="post-header">
+      <nav class="post-nav">
+        <a class="home-link focusable" href="../index.html">Michael Cole</a>
+        <div class="simple-nav">
+          <a class="nav-link focusable" href="../projects.html">projects</a>
+          <a class="nav-link focusable" href="../posts.html">writing</a>
+          <a class="nav-link focusable" href="../contact.html">contact</a>
+        </div>
+      </nav>
+      
+      <h1 class="post-title">Building Gist</h1>
+      
+      <div class="post-meta">
+        <div class="post-meta-item">January 5, 2025</div>
+        <div class="post-meta-item">teacher analytics studio</div>
+      </div>
+    </header>
 
-<body>
-  <div class="nav-logo">
-    <a href="../index.html">michaelcole.me</a>
-  </div>
-  <div class="post">
-    <div class="post-title">
-      <p>Building Gist</p>
-    </div>
-    <img class="post-title-image" src="../media/gist/logo.png" />
-    <div class="post-meta">
-      <p>1/5/2025 2:07am</p>
-      <p>Michael Cole</p>
-    </div>
-    <div class="post-content">
+    <main class="post-content">
+      <img src="../media/gist/logo.png" alt="Gist logo" />
+      
       <p>
-
-      Teachers have a terrible job. And by this, I am not referring to the "soft" stuff, like fufillment, time off, those things are amazing. 
-      I am speaking about the hard, day-to-day tasks of a teacher  The current state of education has teachers trying to reach seemingly impossible goals: understanding the pace at which 100+ students'
-      are progressing, attempting to fit a curriculum to serve people accross multiple skill levels, and meeting the standards of sometimes unfair supervisors. These problems
-      all boil down to one thing: lack of data. When grading/writing/thinking about an assignment teachers have only a few data points: each students' behavior in class and their past performance.
-      And even these data points can be complicated to understand, as something like behavior is qualitative, and past performance, though quantitative, is difficult to track if the teacher does not 
-          <a href="https://gist-quiz.com" class="in-text-link" >Gist</a> aims to fix these problems. When I was listing points of data earlier, I left out one key one: student submitted assignments.
-          On the surface, these may seem relatively useless. Are they not just a todo items for teachers? No. With the power of LLMs, we can use this student data to create comprehensive synthetic data.
-          The key word here is "synthetic." We already established that the problem is limited data, but that is not really true. It is really an obfuscation problem. LLMs can take in this obfuscated data,
-          and spit out key points of interest that teachers need to address. LLMs will also help identify volatile students in either positive or negative directions. This is extremely difficult for teachers
-          to do when managing 100+ students. Gist will not just be for synthetic data, as mentioned previously, quantitative data is hard to manage, and many teachers don't have workflows set up for this.
-          So, Gist will act as a hub for tracking both raw student scores on different metrics the teacher decides (e.g. what they put in their rubric), and synthetic, LLM provided data over time. 
+        Teachers have a terrible job. And by this, I am not referring to the "soft" stuff, like fulfillment, time off—those things are amazing. I am speaking about the hard, day-to-day tasks of a teacher.
       </p>
-    </div>
-  </div>
-</body>
 
+      <p>
+        The current state of education has teachers trying to reach seemingly impossible goals: understanding the pace at which 100+ students are progressing, attempting to fit a curriculum to serve people across multiple skill levels, and meeting the standards of sometimes unfair supervisors. These problems all boil down to one thing: lack of data.
+      </p>
+
+      <p>
+        When grading, writing, or thinking about an assignment, teachers have only a few data points: each student's behavior in class and their past performance. And even these data points can be complicated to understand, as something like behavior is qualitative, and past performance, though quantitative, is difficult to track if the teacher does not have proper workflows set up.
+      </p>
+
+      <h2>The data problem</h2>
+
+      <p>
+        <a href="https://gist-quiz.com">Gist</a> aims to fix these problems. When I was listing points of data earlier, I left out one key one: student submitted assignments. On the surface, these may seem relatively useless. Are they not just todo items for teachers? No. With the power of LLMs, we can use this student data to create comprehensive synthetic data.
+      </p>
+
+      <p>
+        The key word here is "synthetic." We already established that the problem is limited data, but that is not really true. It is really an obfuscation problem. LLMs can take in this obfuscated data and spit out key points of interest that teachers need to address.
+      </p>
+
+      <h2>Identifying patterns</h2>
+
+      <p>
+        LLMs will also help identify volatile students in either positive or negative directions. This is extremely difficult for teachers to do when managing 100+ students. Gist will not just be for synthetic data—as mentioned previously, quantitative data is hard to manage, and many teachers don't have workflows set up for this.
+      </p>
+
+      <p>
+        So, Gist will act as a hub for tracking both raw student scores on different metrics the teacher decides (e.g., what they put in their rubric) and synthetic, LLM-provided data over time.
+      </p>
+
+      <blockquote>
+        "The goal isn't to replace teacher judgment—it's to augment it by surfacing patterns that would otherwise go unnoticed."
+      </blockquote>
+
+      <p>
+        By combining quantitative tracking with AI-powered insights, Gist helps teachers see the full picture of student progress without drowning in spreadsheets or losing the human touch that makes education meaningful.
+      </p>
+    </main>
+
+    <footer class="post-footer">
+      <a class="back-link focusable" href="../projects.html">Back to projects</a>
+      <div class="post-tags">
+        <a class="post-tag focusable" href="#">education</a>
+        <a class="post-tag focusable" href="#">AI</a>
+        <a class="post-tag focusable" href="#">analytics</a>
+        <a class="post-tag focusable" href="#">LLM</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
 </html>

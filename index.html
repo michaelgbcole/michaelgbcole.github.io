@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>michaelcole.me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Cole — thoughtful software</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="">
+  <div class="page">
+    <header class="site-header">
+      <div class="masthead">
+        <p class="eyebrow">18yo, SWE (for now)</p>
+        <h1>Michael Cole</h1>
+        <p class="intro">here's a few things i've made, i'll write more soon</p>
+      </div>
+      <div class="cta-stack">
+        <a class="cta focusable" href="resume.pdf">résumé</a>
+        <a class="cta focusable" href="contact.html">contact</a>
+      </div>
+    </header>
 
-<body class="body">
-    <nav id="desktop-nav", class="nav">
-        <div class="nav-logo">  
-            <a href="index.html">michaelcole.me</a>
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="contact.html">>contact</a></li>
-                <li><a href="resume.pdf">>resume</a></li>
-                <li><a href="projects.html">>projects</a></li>
-                <li><a href="posts.html">>posts</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div>
-        <p class="bottom-text rainbow-text-animated content-desktop"></pclass>  On Desktop, you can use arrow keys to navigate!</p>
-    </div>
-    <script src="script.js"></script>
+    <main class="columns">
+      <section class="column">
+        <div class="column-title">projects</div>
+        <ul class="entry-list" aria-label="Featured projects">
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/Gist.html">
+              <span class="entry-title">Gist</span>
+              <span class="entry-meta">2025 · teacher analytics studio</span>
+              <span class="entry-note">Synthesizing student assignments with LLMs so educators can see progress without drowning in spreadsheets.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/sober-up.html">
+              <span class="entry-title">SoberUp</span>
+              <span class="entry-meta">2025 · wellness companion</span>
+              <span class="entry-note">A lightweight accountability app for people building healthier rituals, designed to feel calm rather than clinical.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="projects/albumCollage.html">
+              <span class="entry-title">albumCollage</span>
+              <span class="entry-meta">2024 · generative art experiment</span>
+              <span class="entry-note">Splicing favorite album covers with SAM2 to create genre moodboards in seconds.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="column">
+        <div class="column-title">writing</div>
+        <ul class="entry-list" aria-label="Recent writing">
+          <li class="entry">
+            <a class="entry-link focusable" href="posts/post1.html">
+              <span class="entry-title">What teachers actually need from AI</span>
+              <span class="entry-meta">July 11, 2024 · notes from building Gist</span>
+              <span class="entry-note">On why synthetic insight beats dashboards and how product craft can make classrooms saner.</span>
+            </a>
+          </li>
+          <li class="entry">
+            <a class="entry-link focusable" href="posts/post2.html">
+              <span class="entry-title">Album covers, remixed</span>
+              <span class="entry-meta">Aug 20, 2024 · hackathon reflections</span>
+              <span class="entry-note">A quick debrief on painting with segmentation models and learning what not to automate.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
