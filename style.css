@@ -74,7 +74,6 @@ body.has-midline::after {
 .eyebrow {
   font-size: 16px;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--muted);
   margin: 0 0 12px;
 }
@@ -110,7 +109,7 @@ h1 {
 
 .cta:hover,
 .cta:focus-visible {
-  transform: translate(-2px, -2px);
+  transform: translate(2px, 2px);
   background-color: rgba(0, 0, 0, 0.05);
   outline: none;
 }
@@ -186,7 +185,7 @@ h1 {
 
 .entry-link:hover::before,
 .entry-link:focus-visible::before {
-  transform: translateX(-4px);
+  transform: translateX(4px);
   background-color: var(--ink);
 }
 
