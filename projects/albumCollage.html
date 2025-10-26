@@ -1,52 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" title="albumCollage" />
-  <title>Contact</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../media/album-genqueries.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building albumCollage — Michael Cole</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
+<body class="page-compact">
+  <div class="page post-page">
+    <header class="post-header">
+      <nav class="post-nav">
+        <a class="home-link focusable" href="../index.html">Michael Cole</a>
+        <div class="simple-nav">
+          <a class="nav-link focusable" href="../projects.html">projects</a>
+          <a class="nav-link focusable" href="../posts.html">writing</a>
+          <a class="nav-link focusable" href="../contact.html">contact</a>
+        </div>
+      </nav>
+      
+      <h1 class="post-title">Building albumCollage</h1>
+      
+      <div class="post-meta">
+        <div class="post-meta-item">August 20, 2024</div>
+        <div class="post-meta-item">generative art experiment</div>
+      </div>
+    </header>
 
-<body>
-  <div class="nav-logo">
-    <a href="../index.html">michaelcole.me</a>
-  </div>
-  <div class="post">
-    <div class="post-title">
-      <p>Building albumCollage</p>
-    </div>
-    <img class="post-title-image" src="../media/album-gen/albumCollage.png" />
-    <div class="post-meta">
-      <p>8/20/2024 11:03pm</p>
-      <p>Michael Cole</p>
-    </div>
-    <div class="post-content">
+    <main class="post-content">
+      <img src="../media/album-gen/albumCollage.png" alt="AlbumCollage project overview" />
+      
       <p>
-        A couple of weeks ago, I attended the SAM 2 Hackathon at AGI House SF. SAM 2 is Meta's latest image/video segmentation mode. My partner at the event,
-        Chris Voon, and I had no idea what we were really doing. Meeting 30+ tech bros within the span of an hour was overstimulating. We sat, thinking about 
-        different ideas for our project. Eventually, we settled on a general direction: we wanted to create something that delt with generating album covers. 
-        Initally, we wanted to train, or at least fine tune a model to generate album covers from scratch. So, we pulled from an API that listed album's, their 
-        covers, their artists, and their genres. Once we had this dataset, we began to work on implementing them into our SAM 2 API, graciously provided by <a class="in-text-link" href="replicate.com">replicate.com</a>.
-        At this point we had around 2 hours left in the hackathon, so we decided to pivot. Rather than generating from scratch, we decided to grab random bits and pieces
-        of album covers of a given genre, and paste them on top of eachother. This was a fun, artsy project that we presented, and although we didn't win, we learned the 
-        importance of deciding what NOT to build. Here is the github repo for the <a class="in-text-link" href="https://github.com/woofer300/collage-album-cover-generator">project</a>. Below are the results for each genre.
+        A couple of weeks ago, I attended the SAM 2 Hackathon at AGI House SF. SAM 2 is Meta's latest image/video segmentation model. My partner at the event, Chris Voon, and I had no idea what we were really doing. Meeting 30+ tech bros within the span of an hour was overstimulating.
       </p>
-      <p class="post-subheading">90s</p>
-      <img class="post-image" src="../media/album-gen/90s.jpg" />
-      <p class="post-subheading">hip-hop</p>
-      <img class="post-image" src="../media/album-gen/hip-hop.jpg" />
-        <p class="post-subheading">jazz</p>
-        <img class="post-image" src="../media/album-gen/jazz.jpg" />
-        <p class="post-subheading">rock</p>
-        <img class="post-image" src="../media/album-gen/rock.jpg" />
-        <p class="post-subheading">pop</p>
-        <img class="post-image" src="../media/album-gen/pop.jpg" />
-        <p class="post-subheading">80s</p>
-        <img class="post-image" src="../media/album-gen/80s.jpg" />
-    </div>
-  </div>
-</body>
 
+      <p>
+        We sat, thinking about different ideas for our project. Eventually, we settled on a general direction: we wanted to create something that dealt with generating album covers. Initially, we wanted to train, or at least fine-tune a model to generate album covers from scratch.
+      </p>
+
+      <h2>The technical approach</h2>
+
+      <p>
+        So, we pulled from an API that listed albums, their covers, their artists, and their genres. Once we had this dataset, we began to work on implementing them into our SAM 2 API, graciously provided by <a href="https://replicate.com">replicate.com</a>.
+      </p>
+
+      <p>
+        At this point we had around 2 hours left in the hackathon, so we decided to pivot. Rather than generating from scratch, we decided to grab random bits and pieces of album covers of a given genre, and paste them on top of each other.
+      </p>
+
+      <h2>Learning to pivot</h2>
+
+      <p>
+        This was a fun, artsy project that we presented, and although we didn't win, we learned the importance of deciding what NOT to build. Here is the <a href="https://github.com/woofer300/collage-album-cover-generator">GitHub repo for the project</a>.
+      </p>
+
+      <blockquote>
+        "Sometimes the most valuable thing you can build is a tool that helps you see familiar things in new ways."
+      </blockquote>
+
+      <p>
+        The results were surprisingly compelling. By combining visual elements from different albums within the same genre, we created something that felt both familiar and new—capturing the essence of each musical style through its visual language.
+      </p>
+
+      <h2>Genre explorations</h2>
+
+      <p>Below are the results for each genre:</p>
+
+      <h3>90s</h3>
+      <img src="../media/album-gen/90s.jpg" alt="90s genre collage" />
+
+      <h3>Hip-hop</h3>
+      <img src="../media/album-gen/hip-hop.jpg" alt="Hip-hop genre collage" />
+
+      <h3>Jazz</h3>
+      <img src="../media/album-gen/jazz.jpg" alt="Jazz genre collage" />
+
+      <h3>Rock</h3>
+      <img src="../media/album-gen/rock.jpg" alt="Rock genre collage" />
+
+      <h3>Pop</h3>
+      <img src="../media/album-gen/pop.jpg" alt="Pop genre collage" />
+
+      <h3>80s</h3>
+      <img src="../media/album-gen/80s.jpg" alt="80s genre collage" />
+
+      <p>
+        Each collage tells a story about its genre—the bold colors of 80s synth-pop, the gritty textures of 90s grunge, the minimalist elegance of jazz. It's amazing how much visual DNA each genre carries.
+      </p>
+    </main>
+
+    <footer class="post-footer">
+      <a class="back-link focusable" href="../projects.html">Back to projects</a>
+      <div class="post-tags">
+        <a class="post-tag focusable" href="#">AI</a>
+        <a class="post-tag focusable" href="#">generative art</a>
+        <a class="post-tag focusable" href="#">hackathon</a>
+        <a class="post-tag focusable" href="#">SAM2</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
 </html>
