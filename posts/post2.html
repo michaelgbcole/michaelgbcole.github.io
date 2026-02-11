@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album covers, remixed — Michael Cole</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <p>post2</p>
+<body class="page-compact">
+  <div class="page post-page">
+    <header class="post-header">
+      <nav class="post-nav">
+        <a class="home-link focusable" href="../index.html">Michael Cole</a>
+        <div class="simple-nav">
+          <a class="nav-link focusable" href="../projects.html">projects</a>
+          <a class="nav-link focusable" href="../posts.html">writing</a>
+          <a class="nav-link focusable" href="../contact.html">contact</a>
+        </div>
+      </nav>
+      
+      <h1 class="post-title">Album covers, remixed</h1>
+      
+      <div class="post-meta">
+        <div class="post-meta-item">August 20, 2024</div>
+        <div class="post-meta-item">hackathon reflections</div>
+      </div>
+    </header>
+
+    <main class="post-content">
+      <p>
+        Last weekend, I spent 48 hours at a local hackathon building something I've been curious about for months: using AI to remix album artwork. The idea was simple—take iconic album covers, segment them with SAM2, and create moodboards that capture the essence of different musical genres.
+      </p>
+
+      <h2>Why album covers?</h2>
+
+      <p>
+        Album artwork has always fascinated me as a form of visual communication. In just a few square inches, designers manage to capture not just the sound of an album, but its entire cultural moment. The bold colors of 80s synth-pop, the gritty textures of 90s grunge, the minimalist elegance of jazz—each genre has its own visual language.
+      </p>
+
+      <p>
+        I wanted to see what would happen if we could extract and recombine these visual elements to create something new. What would a hip-hop album cover look like if it borrowed the color palette from a classic jazz record? Could we create a visual bridge between seemingly disparate genres?
+      </p>
+
+      <h2>The technical challenge</h2>
+
+      <p>
+        The project involved several moving parts:
+      </p>
+
+      <ul>
+        <li>Processing album artwork through SAM2 for semantic segmentation</li>
+        <li>Extracting color palettes and compositional elements</li>
+        <li>Building a simple interface for mixing and matching different elements</li>
+        <li>Generating new compositions that maintained the visual DNA of the originals</li>
+      </ul>
+
+      <p>
+        The segmentation part was surprisingly smooth—SAM2 handled the album artwork better than I expected, cleanly separating foreground elements from backgrounds and identifying key visual components.
+      </p>
+
+      <h2>What I learned about automation</h2>
+
+      <blockquote>
+        "The best automation doesn't replace human creativity—it amplifies it."
+      </blockquote>
+
+      <p>
+        This became the theme of the weekend. Initially, I thought the goal was to fully automate the creative process. But as I worked with the tool, I realized that the most interesting results came from the collaboration between AI and human intuition.
+      </p>
+
+      <p>
+        The AI was great at identifying and extracting visual elements, but it couldn't judge whether a particular combination "felt right" for a genre. That required human taste and cultural context. The magic happened when I used the AI as a creative partner rather than a replacement for creativity.
+      </p>
+
+      <h2>The unexpected discoveries</h2>
+
+      <p>
+        Some of the most compelling results came from unexpected combinations. Mixing the geometric precision of 80s new wave with the organic textures of folk music created something that felt both nostalgic and fresh. The contrast between the clean lines and natural elements somehow captured the tension between urban and rural experiences.
+      </p>
+
+      <p>
+        I also discovered that certain color relationships transcended genre boundaries. The deep purples and electric blues that defined 90s R&B worked surprisingly well with the earth tones of classic rock, creating a palette that felt both familiar and new.
+      </p>
+
+      <h2>What not to automate</h2>
+
+      <p>
+        The biggest lesson from the weekend was learning what <em>not</em> to automate. The initial plan was to create a fully automated system that would generate genre moodboards on demand. But I quickly realized that the most interesting results required human curation and judgment.
+      </p>
+
+      <p>
+        Instead of building a black box that spat out random combinations, I shifted to creating a tool that would surface interesting possibilities for human review. The AI would suggest combinations, but a human would decide which ones worked and why.
+      </p>
+
+      <h2>Looking forward</h2>
+
+      <p>
+        The hackathon project became the foundation for what I'm now calling "albumCollage"—a tool for exploring the visual language of music through AI-assisted remixing. It's not about replacing album artwork or automating design, but about understanding how visual elements communicate musical ideas.
+      </p>
+
+      <p>
+        Sometimes the most valuable thing you can build is a tool that helps you see familiar things in new ways. That's what this project taught me about the intersection of AI and creativity.
+      </p>
+    </main>
+
+    <footer class="post-footer">
+      <a class="back-link focusable" href="../posts.html">Back to writing</a>
+      <div class="post-tags">
+        <a class="post-tag focusable" href="#">AI</a>
+        <a class="post-tag focusable" href="#">creativity</a>
+        <a class="post-tag focusable" href="#">hackathon</a>
+        <a class="post-tag focusable" href="#">albumCollage</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
 </body>
 </html>
